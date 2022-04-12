@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $dark-grey;
+    background: $bg-darkblue;
 }
 
 .container{
@@ -26,7 +26,7 @@ body{
         top: calc(40vh/2);
         display: flex;
         flex-direction: column;
-        background: $light-grey;
+        background: $cobg-blue;
         width: fit-content;
         padding: 15px;
         z-index: 10;
@@ -40,7 +40,7 @@ body{
                 svg,img{
                     width: 100%;
                     height: 100%;
-                    fill: $icon-whitesmoke;
+                    fill: $icon;
                 }
             }
         }
@@ -55,7 +55,7 @@ body{
         padding: 50px;
         width: 1100px;
         height: 600px;
-        // background: $light-grey;
+        // background: $cobg-blue;
     }
     .left-home{
         .pic{
@@ -63,7 +63,7 @@ body{
             height: 350px;
             border-radius: 100%;
             // border: 1px solid $salmon;
-            background: $dark-grey;
+            background: $bg-darkblue;
             img{
                 // position: relative;
                 width: 100%;
@@ -89,7 +89,7 @@ body{
         // border: 1px solid $salmon;
         border-radius: 10px;
         padding: 20px;
-        box-shadow: -1.5px -1.5px $dark-grey;
+        box-shadow: -1.5px -1.5px $bg-darkblue;
         transition: .6s;
         .title{
             text-align: center;
@@ -97,7 +97,7 @@ body{
             // border: 1px solid $salmon;
             h4{
                 font-weight: 400;
-                color: $grey;
+                color: $darkcyan;
             }
             h2{
                 font-weight: 800;
@@ -106,26 +106,26 @@ body{
             }
             h3{
                 font-weight: 400;
-                color: $grey;
-                border-bottom: 1px solid $grey;
+                color: $darkcyan;
+                border-bottom: 1px solid $darkcyan;
             }
         }
         .description{
             p{
-                color: $grey-hea;
+                color: $para-grey;
             }
         }
         a{
             text-decoration: none;
-            color: $grey;
+            color: $darkcyan;
             margin-top: 30px;
-            background: $dark-grey;
+            background: $bg-darkblue;
             padding: 15px 2rem;
             border-radius: 15px;
             transition: .6s;
-            box-shadow: 10px 10px $grey;
+            box-shadow: 10px 10px $darkcyan;
             &:hover{   
-                box-shadow: -10px -10px $grey;
+                box-shadow: -10px -10px $darkcyan;
             }
         }
     }
@@ -134,17 +134,17 @@ body{
     .cont-abt{
         // border: 1px solid salmon;
         .all-about{
-            background: $dark-grey;
+            background: $bg-darkblue;
             height: 100%;
             overflow: auto;
             &::-webkit-scrollbar{
                 width: 10px;
             }
             &::-webkit-scrollbar-track{
-                background: $light-grey;
+                background: $cobg-blue;
             }
             &::-webkit-scrollbar-thumb{
-                background: $dark-grey;
+                background: $bg-darkblue;
             }
         }
         .top{
@@ -164,12 +164,12 @@ body{
                 width: 50%;
                 .description{
                     h2{
-                        color: $grey;
+                        color: $darkcyan;
                         text-align: center;
                         font-weight: 600;
                     }
                     p{
-                        color: $light-grey;
+                        color: $cobg-blue;
                     }
                 }
                 a{
@@ -180,14 +180,14 @@ body{
                     align-items: center;
                     color: $black;
                     padding: 20px;
-                    background: $light-grey;
+                    background: $cobg-blue;
                     width: 200px;
                     height: 50px;
                     border-radius: 5px;
                     transition: .6s;
-                    box-shadow: 10px 10px $grey;
+                    box-shadow: 10px 10px $darkcyan;
                     &:hover{
-                        box-shadow: -10px -10px $grey;
+                        box-shadow: -10px -10px $darkcyan;
                     }
                     img{
                         width: 40px;
@@ -215,7 +215,7 @@ body{
                         position: relative;
                         border-radius: 20px;
                         height: 70px;
-                        background: $light-grey;
+                        background: $cobg-blue;
                         img{
                             position: absolute;
                             top: 50%;
@@ -234,14 +234,14 @@ body{
                     align-items: center;
                     color: $black;
                     padding: 20px;
-                    background: $light-grey;
+                    background: $cobg-blue;
                     width: 200px;
                     height: 50px;
                     border-radius: 5px;
                     transition: .6s;
-                    box-shadow: 10px 10px $grey;
+                    box-shadow: 10px 10px $darkcyan;
                     &:hover{
-                        box-shadow: -10px -10px $grey;
+                        box-shadow: -10px -10px $darkcyan;
                     }
                     img{
                         width: 40px;
@@ -260,7 +260,7 @@ body{
                 grid-template-columns: 100%;
                 row-gap: 30px;
                 h3{
-                    color: $grey-hea;
+                    color: $para-grey;
                     text-align: center;
                     margin: 20px 0;
                 }
@@ -279,7 +279,7 @@ body{
                     #scale{
                         width: 70%;
                         height: 7px;
-                        background: $light-grey;
+                        background: $cobg-blue;
                         margin-top: 10px;
                         position: relative;
                         // border: 1px solid salmon;
@@ -289,7 +289,7 @@ body{
                             width: 70%;
                             height: 60%;
                             bottom: 0;
-                            background: blueviolet;
+                            background: $violet;
                         }
                     }
                 }
@@ -299,7 +299,7 @@ body{
                 grid-template-columns: 100%;
                 row-gap: 30px;
                 h3{
-                    color: $grey-hea;
+                    color: $para-grey;
                     text-align: center;
                     margin: 20px 0;
                 }
@@ -318,7 +318,7 @@ body{
                     #scale{
                         width: 70%;
                         height: 7px;
-                        background: $light-grey;
+                        background: $cobg-blue;
                         margin-top: 10px;
                         position: relative;
                         // border: 1px solid salmon;
@@ -328,7 +328,7 @@ body{
                             width: 70%;
                             height: 60%;
                             bottom: 0;
-                            background: yellow;
+                            background: $yellow;
                         }
                     }
                 }
@@ -342,10 +342,10 @@ body{
             border-radius: 10px;
             padding: 25px 40px;
             overflow: auto;
-            background: $dark-grey;
+            background: $bg-darkblue;
             h1{
                 text-align: center;
-                color: $grey;
+                color: $darkcyan;
                 font-weight: 300;
                 margin-bottom: 25px;
             }
@@ -361,7 +361,7 @@ body{
                     flex-direction: column;
                     align-items: center;
                     .icon{
-                        background: $light-grey;
+                        background: $cobg-blue;
                         width: 100px;
                         height: 100px;
                         border-radius: 20px;
@@ -379,7 +379,7 @@ body{
                     }
                     .name{
                         font-size: 1rem;
-                        color: $grey;
+                        color: $darkcyan;
                     }
                 }
             }
@@ -395,10 +395,10 @@ body{
             border-radius: 10px;
             padding: 25px 40px;
             overflow: auto;
-            background: $dark-grey;
+            background: $bg-darkblue;
             h1{
                 text-align: center;
-                color: $grey;
+                color: $darkcyan;
                 font-weight: 300;
                 margin-bottom: 20px;
             }
@@ -410,15 +410,15 @@ body{
                     margin: 0 30px;
                     padding: 5px 1.5rem;
                     border: 1px solid transparent;
-                    background: $grey;
+                    background: $darkcyan;
                     border-radius: 4px;
                     cursor: pointer;
                     margin-bottom: 25px;
                     transition: .6s;
                     &:hover{
-                        background: $dark-grey;
-                        color: $grey;
-                        border: 1px solid $grey;
+                        background: $bg-darkblue;
+                        color: $darkcyan;
+                        border: 1px solid $darkcyan;
                     }
                 }
             }
@@ -435,7 +435,7 @@ body{
                     border-radius: 15px;
                     overflow: hidden;
                     // padding: 75px 20px;
-                    background: $light-grey;
+                    background: $cobg-blue;
                     // border: 1px solid salmon;
                     transform: rotate(1deg);
                     img{
@@ -519,20 +519,20 @@ body{
             width: 10px;
         }
         &::-webkit-scrollbar-track{
-            background: $light-grey;
+            background: $cobg-blue;
         }
         &::-webkit-scrollbar-thumb{
-            background: $dark-grey;
+            background: $bg-darkblue;
         }
         h1{
             position: sticky;
             top: 0;
-            background: $darkish;
+            background: $transparent-blog;
             backdrop-filter: blur(5px);
             z-index: 2;
             text-align: center;
             font-weight: 400;
-            color: $grey;
+            color: $darkcyan;
             width: 100%;
         }
         .blogs{
@@ -568,7 +568,7 @@ body{
                     p{
                         font-size: 0.85rem;
                         font-style: italic;
-                        color: $grey-hea;
+                        color: $para-grey;
                     }
                 }
                 h4{
@@ -593,7 +593,7 @@ body{
             backdrop-filter: blur(5px);
             text-align: center;
             font-weight: 400;
-            color: $grey;
+            color: $darkcyan;
             // width: 100%;
         }
         .talk{
@@ -613,7 +613,7 @@ body{
                     input,textarea{
                         outline: none;
                         border-radius: 20px;
-                        background: $light-grey;
+                        background: $cobg-blue;
                         border: none;
                         // border: 1px solid #cccccc25;
                         width: 80%;
@@ -626,15 +626,15 @@ body{
                     input{
                         display: block;
                         margin: 20px 0;
-                        color: $grey;
+                        color: $darkcyan;
                     }
                     button{
                         margin-top: 30px;
                         cursor: pointer;
-                        color: $grey;
+                        color: $darkcyan;
                         padding: 7px 4rem;
                         display: block;
-                        background: $light-grey;
+                        background: $cobg-blue;
                         border: 1px solid transparent;
                         border-radius: 10px;
                         box-shadow: -5px -5px #ccc;
@@ -651,7 +651,7 @@ body{
                 h3{
                     font-weight: 400;
                     font-size: 0.95rem;
-                    color: $grey;
+                    color: $darkcyan;
                     text-align: center;
                 }
                 .map{
@@ -677,7 +677,7 @@ body{
                         width: 50px;
                         height: 50px;
                         border-radius: 20px;
-                        background: $light-grey;
+                        background: $cobg-blue;
                         // border: salmon 1px solid;
                         position: relative;
                         img{

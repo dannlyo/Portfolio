@@ -539,7 +539,7 @@ body {
       grid-template-columns: calc(100%/3) calc(100%/4) calc(100%/4);
   -ms-grid-rows: 200px 200px;
       grid-template-rows: 200px 200px;
-      grid-template-areas: "img1 img2 img3" "img1 img4 img4";
+      grid-template-areas: "img1 img2 img3" "img1 img4 img4";
 }
 
 .container .contain-port .port .gallery .img {
@@ -578,7 +578,7 @@ body {
 
 .container .contain-port .port .gallery .img1::after {
   position: absolute;
-  color: #387;
+  color: #ccc;
   font-size: 1.6rem;
   text-align: center;
   display: block;
@@ -603,7 +603,7 @@ body {
 
 .container .contain-port .port .gallery .img2::after {
   position: absolute;
-  color: #387;
+  color: #ccc;
   font-size: 1.6rem;
   text-align: center;
   display: block;
@@ -628,7 +628,7 @@ body {
 
 .container .contain-port .port .gallery .img3::after {
   position: absolute;
-  color: #387;
+  color: #ccc;
   font-size: 1.6rem;
   text-align: center;
   display: block;
@@ -654,7 +654,7 @@ body {
 
 .container .contain-port .port .gallery .img4::after {
   position: absolute;
-  color: #387;
+  color: #ccc;
   font-size: 1.6rem;
   text-align: center;
   display: block;
