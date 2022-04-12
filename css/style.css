@@ -1,3 +1,25 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --salmon: salmon;
+  --grey: #ccc;
+  --para-grey: #999999;
+  --transparent-blog: #2826267c;
+  --bg-darkblue: #000f1a;
+  --cobg-blue: #012842;
+  --darkcyan: #387;
+  --icon: #5a8;
+  --violet: blueviolet;
+  --yellow: yellow;
+}
+
+.light {
+  --bg-darkblue: #d9e3f3;
+  --cobg-blue: #063657;
+  --darkcyan: #387;
+  --icon: #a2e6ca;
+}
+
 * {
   margin: 0;
   padding: 0;

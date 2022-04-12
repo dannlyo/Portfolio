@@ -1,6 +1,29 @@
 @import 'mixin';
 @import 'variables';
 
+:root{
+        --white : #{$white};
+        --black: #{$black};
+        --salmon: #{$salmon};
+        --grey: #{$grey};
+        --para-grey: #{$para-grey};
+        --transparent-blog: #{$transparent-blog};
+        --bg-darkblue: #{$bg-darkblue};
+        --cobg-blue: #{$cobg-blue};
+        --darkcyan: #{$darkcyan};
+        --icon: #{$icon};
+        --violet: #{$violet};
+        --yellow: #{$yellow};
+}
+
+.light{
+    --bg-darkblue: #{$light-bk};
+    --cobg-blue: #{$light-darkblue};
+    --darkcyan: #{$light-darkcyan};
+    --icon: #{$light-icon};
+}
+
+
 *{
     margin: 0;
     padding: 0;

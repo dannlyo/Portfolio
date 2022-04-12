@@ -1,25 +1,22 @@
 // Dark Mode
-:root{
-    $white : #fff;
-    $black: #000;
-    $salmon: salmon;
-    $night-grey: #ccc;
-    $night-para-grey: #999999;
-    $night-transparent-blog: #2826267c;
-    $night-bg-darkblue: #000f1a;
-    $night-cobg-blue: #012842;
-    $night-darkcyan: #387;
-    $night-icon: #5a8;
-    $night-violet: blueviolet;
-    $night-yellow: yellow;
-}
+
+$white : #fff;
+$black: #000;
+$salmon: salmon;
+$grey: #ccc;
+$para-grey: #999999;
+$transparent-blog: #2826267c;
+$bg-darkblue: #000f1a;
+$cobg-blue: #012842;
+$darkcyan: #387;
+$icon: #5a8;
+$violet: blueviolet;
+$yellow: yellow;
 
 // Light Mode
 
-.light{
-    $light-bk: #d9e3f3;
-    $ligt-darkblue: #063657;
-    $light-transparent: #0128425b;
-    $light-darkcyan: #387;
-    $light-icon: #a2e6ca; 
-}  
+$light-bk: #d9e3f3;
+$light-darkblue: #063657;
+$light-transparent: #0128425b;
+$light-darkcyan: #387;
+$light-icon: #a2e6ca;   
