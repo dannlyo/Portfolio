@@ -38,7 +38,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #000f1a;
+  background: var(--bg-darkblue);
 }
 
 .container {
@@ -58,7 +58,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #012842;
+  background: var(--cobg-blue);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -76,7 +76,7 @@ body {
 .container .side-bar a .icon svg, .container .side-bar a .icon img {
   width: 100%;
   height: 100%;
-  fill: #5a8;
+  fill: var(--icon);
 }
 
 .container .op, .container .cont-abt, .container .contain-ser {
@@ -94,13 +94,29 @@ body {
   padding: 50px;
   width: 1100px;
   height: 600px;
+  overflow: hidden;
+}
+
+.container .op #mode, .container .cont-abt #mode, .container .contain-ser #mode {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.container .op #mode img, .container .cont-abt #mode img, .container .contain-ser #mode img {
+  fill: blue;
+  width: 70%;
+  height: 70%;
 }
 
 .container .left-home .pic {
   width: 270px;
   height: 350px;
   border-radius: 100%;
-  background: #000f1a;
+  background: var(--bg-darkblue);
 }
 
 .container .left-home .pic img {
@@ -122,8 +138,8 @@ body {
           align-items: center;
   border-radius: 10px;
   padding: 20px;
-  -webkit-box-shadow: -1.5px -1.5px #000f1a;
-          box-shadow: -1.5px -1.5px #000f1a;
+  -webkit-box-shadow: -1.5px -1.5px var(--bg-darkblue);
+          box-shadow: -1.5px -1.5px var(--bg-darkblue);
   -webkit-transition: .6s;
   transition: .6s;
 }
@@ -135,7 +151,7 @@ body {
 
 .container .right-home .title h4 {
   font-weight: 400;
-  color: #387;
+  color: var(--darkcyan);
 }
 
 .container .right-home .title h2 {
@@ -146,8 +162,8 @@ body {
 
 .container .right-home .title h3 {
   font-weight: 400;
-  color: #387;
-  border-bottom: 1px solid #387;
+  color: var(--darkcyan);
+  border-bottom: 1px solid var(--darkcyan);
 }
 
 .container .right-home .description p {
@@ -156,24 +172,24 @@ body {
 
 .container .right-home a {
   text-decoration: none;
-  color: #387;
+  color: var(--darkcyan);
   margin-top: 30px;
-  background: #000f1a;
+  background: var(--bg-darkblue);
   padding: 15px 2rem;
   border-radius: 15px;
   -webkit-transition: .6s;
   transition: .6s;
-  -webkit-box-shadow: 10px 10px #387;
-          box-shadow: 10px 10px #387;
+  -webkit-box-shadow: 10px 10px var(--darkcyan);
+          box-shadow: 10px 10px var(--darkcyan);
 }
 
 .container .right-home a:hover {
-  -webkit-box-shadow: -10px -10px #387;
-          box-shadow: -10px -10px #387;
+  -webkit-box-shadow: -10px -10px var(--darkcyan);
+          box-shadow: -10px -10px var(--darkcyan);
 }
 
 .container .cont-abt .all-about {
-  background: #000f1a;
+  background: var(--bg-darkblue);
   height: 100%;
   overflow: auto;
 }
@@ -183,11 +199,11 @@ body {
 }
 
 .container .cont-abt .all-about::-webkit-scrollbar-track {
-  background: #012842;
+  background: var(--cobg-blue);
 }
 
 .container .cont-abt .all-about::-webkit-scrollbar-thumb {
-  background: #000f1a;
+  background: var(--bg-darkblue);
 }
 
 .container .cont-abt .top {
@@ -221,13 +237,13 @@ body {
 }
 
 .container .cont-abt .top .left-about .description h2 {
-  color: #387;
+  color: var(--darkcyan);
   text-align: center;
   font-weight: 600;
 }
 
 .container .cont-abt .top .left-about .description p {
-  color: #012842;
+  color: var(--cobg-blue);
 }
 
 .container .cont-abt .top .left-about a {
@@ -244,19 +260,19 @@ body {
           align-items: center;
   color: #000;
   padding: 20px;
-  background: #012842;
+  background: var(--cobg-blue);
   width: 200px;
   height: 50px;
   border-radius: 5px;
   -webkit-transition: .6s;
   transition: .6s;
-  -webkit-box-shadow: 10px 10px #387;
-          box-shadow: 10px 10px #387;
+  -webkit-box-shadow: 10px 10px var(--darkcyan);
+          box-shadow: 10px 10px var(--darkcyan);
 }
 
 .container .cont-abt .top .left-about a:hover {
-  -webkit-box-shadow: -10px -10px #387;
-          box-shadow: -10px -10px #387;
+  -webkit-box-shadow: -10px -10px var(--darkcyan);
+          box-shadow: -10px -10px var(--darkcyan);
 }
 
 .container .cont-abt .top .left-about a img {
@@ -296,7 +312,7 @@ body {
   position: relative;
   border-radius: 20px;
   height: 70px;
-  background: #012842;
+  background: var(--cobg-blue);
 }
 
 .container .cont-abt .top .right-about .links .link img {
@@ -323,19 +339,19 @@ body {
           align-items: center;
   color: #000;
   padding: 20px;
-  background: #012842;
+  background: var(--cobg-blue);
   width: 200px;
   height: 50px;
   border-radius: 5px;
   -webkit-transition: .6s;
   transition: .6s;
-  -webkit-box-shadow: 10px 10px #387;
-          box-shadow: 10px 10px #387;
+  -webkit-box-shadow: 10px 10px var(--darkcyan);
+          box-shadow: 10px 10px var(--darkcyan);
 }
 
 .container .cont-abt .top .right-about #col:hover {
-  -webkit-box-shadow: -10px -10px #387;
-          box-shadow: -10px -10px #387;
+  -webkit-box-shadow: -10px -10px var(--darkcyan);
+          box-shadow: -10px -10px var(--darkcyan);
 }
 
 .container .cont-abt .top .right-about #col img {
@@ -380,7 +396,7 @@ body {
 .container .cont-abt .bottom .design .des #scale {
   width: 70%;
   height: 7px;
-  background: #012842;
+  background: var(--cobg-blue);
   margin-top: 10px;
   position: relative;
 }
@@ -423,7 +439,7 @@ body {
 .container .cont-abt .bottom .coding .cod #scale {
   width: 70%;
   height: 7px;
-  background: #012842;
+  background: var(--cobg-blue);
   margin-top: 10px;
   position: relative;
 }
@@ -443,12 +459,12 @@ body {
   border-radius: 10px;
   padding: 25px 40px;
   overflow: auto;
-  background: #000f1a;
+  background: var(--bg-darkblue);
 }
 
 .container .contain-ser .serv h1 {
   text-align: center;
-  color: #387;
+  color: var(--darkcyan);
   font-weight: 300;
   margin-bottom: 25px;
 }
@@ -478,7 +494,7 @@ body {
 }
 
 .container .contain-ser .serv .services .service .icon {
-  background: #012842;
+  background: var(--cobg-blue);
   width: 100px;
   height: 100px;
   border-radius: 20px;
@@ -498,7 +514,7 @@ body {
 
 .container .contain-ser .serv .services .service .name {
   font-size: 1rem;
-  color: #387;
+  color: var(--darkcyan);
 }
 
 .container .contain-port {
@@ -513,12 +529,12 @@ body {
   border-radius: 10px;
   padding: 25px 40px;
   overflow: auto;
-  background: #000f1a;
+  background: var(--bg-darkblue);
 }
 
 .container .contain-port .port h1 {
   text-align: center;
-  color: #387;
+  color: var(--darkcyan);
   font-weight: 300;
   margin-bottom: 20px;
 }
@@ -536,7 +552,7 @@ body {
   margin: 0 30px;
   padding: 5px 1.5rem;
   border: 1px solid transparent;
-  background: #387;
+  background: var(--darkcyan);
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 25px;
@@ -545,9 +561,9 @@ body {
 }
 
 .container .contain-port .port .swi-nav button:hover {
-  background: #000f1a;
-  color: #387;
-  border: 1px solid #387;
+  background: var(--bg-darkblue);
+  color: var(--darkcyan);
+  border: 1px solid var(--darkcyan);
 }
 
 .container .contain-port .port .gallery {
@@ -567,7 +583,7 @@ body {
 .container .contain-port .port .gallery .img {
   border-radius: 15px;
   overflow: hidden;
-  background: #012842;
+  background: var(--cobg-blue);
   -webkit-transform: rotate(1deg);
           transform: rotate(1deg);
 }
@@ -709,11 +725,11 @@ body {
 }
 
 .container .contain-blog::-webkit-scrollbar-track {
-  background: #012842;
+  background: var(--cobg-blue);
 }
 
 .container .contain-blog::-webkit-scrollbar-thumb {
-  background: #000f1a;
+  background: var(--bg-darkblue);
 }
 
 .container .contain-blog h1 {
@@ -726,7 +742,7 @@ body {
   z-index: 2;
   text-align: center;
   font-weight: 400;
-  color: #387;
+  color: var(--darkcyan);
   width: 100%;
 }
 
@@ -805,7 +821,7 @@ body {
           backdrop-filter: blur(5px);
   text-align: center;
   font-weight: 400;
-  color: #387;
+  color: var(--darkcyan);
 }
 
 .container .contain-talk .talk {
@@ -838,7 +854,7 @@ body {
 .container .contain-talk .talk .talk-left form input, .container .contain-talk .talk .talk-left form textarea {
   outline: none;
   border-radius: 20px;
-  background: #012842;
+  background: var(--cobg-blue);
   border: none;
   width: 80%;
   padding: 10px 25px;
@@ -864,16 +880,16 @@ body {
 .container .contain-talk .talk .talk-left form input {
   display: block;
   margin: 20px 0;
-  color: #387;
+  color: var(--darkcyan);
 }
 
 .container .contain-talk .talk .talk-left form button {
   margin-top: 30px;
   cursor: pointer;
-  color: #387;
+  color: var(--darkcyan);
   padding: 7px 4rem;
   display: block;
-  background: #012842;
+  background: var(--cobg-blue);
   border: 1px solid transparent;
   border-radius: 10px;
   -webkit-box-shadow: -5px -5px #ccc;
@@ -894,7 +910,7 @@ body {
 .container .contain-talk .talk .talk-right h3 {
   font-weight: 400;
   font-size: 0.95rem;
-  color: #387;
+  color: var(--darkcyan);
   text-align: center;
 }
 
@@ -929,7 +945,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 20px;
-  background: #012842;
+  background: var(--cobg-blue);
   position: relative;
 }
 
