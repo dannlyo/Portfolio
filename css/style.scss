@@ -34,29 +34,49 @@
 body{
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 100vh;
     align-items: center;
     background: var(--bg-darkblue);
+    @media (max-width: 850px) {
+        height: auto;
+    }
 }
 
 .container{
     position: relative;
     max-width: 1310px;
-    border: 1px solid salmon;
+    // border: 1px solid salmon;
     @media (max-width: 1102px) {
-        padding: 20px;
+        // padding: 20px;
         // width: 1000px;
     }
     .side-bar{
         position: fixed;
         right: 0;
         border-radius: 10px 0 0 10px;
-        top: calc(40vh/2);
+        bottom: calc(25vh/2);
         display: flex;
         flex-direction: column;
         // background: var(--cobg-blue);
         width: fit-content;
         padding: 15px;
         z-index: 10;
+        @media (max-width: 750px) {
+            border-radius: 20px 20px 0 0;
+            padding: 0;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+            bottom: 0;
+            left: 0;
+            background: var(--cobg-blue);
+            background: #2826267c;
+            backdrop-filter: blur(10px);
+            height: 70px;
+            flex-direction: row;
+            // border: 1px solid salmon;
+        }
         a{
             .icon{
                 // border: 1px solid $salmon;
@@ -66,6 +86,14 @@ body{
                 padding: 10px;
                 background: var(--cobg-blue);
                 margin: 10px 0;
+                @media (max-width: 750px) {
+                    background: var(--transparent-blog);
+                    // border: 1px solid var(--bg-darkblue);
+                }
+                @media (max-width: 395px) {
+                    width: 45px;
+                    height: 45px;
+                }
                 svg,img{
                     width: 100%;
                     height: 100%;
@@ -75,11 +103,14 @@ body{
         }
         #home,#about,#services,#portfolio,#blog,#talk{
             position: relative;
-        }
-        #home{
             &::before{
                 @include nav_pseuso;
+                @media (max-width: 750px) {
+                    display: none;
+                }
             }
+        }
+        #home{
             &:hover{
                 &::before{
                     content: 'Home';
@@ -88,9 +119,6 @@ body{
             }
         }
         #about{
-            &::before{
-                @include nav_pseuso;
-            }
             &:hover{
                 &::before{
                     content: 'About';
@@ -99,9 +127,6 @@ body{
             }
         }
         #services{
-            &::before{
-                @include nav_pseuso;
-            }
             &:hover{
                 &::before{
                     content: 'Services';
@@ -110,9 +135,6 @@ body{
             }
         }
         #portfolio{
-            &::before{
-                @include nav_pseuso;
-            }
             &:hover{
                 &::before{
                     content: 'Portfolio';
@@ -121,9 +143,6 @@ body{
             }
         }
         #blog{
-            &::before{
-                @include nav_pseuso;
-            }
             &:hover{
                 &::before{
                     content: 'Blog';
@@ -132,9 +151,6 @@ body{
             }
         }
         #talk{
-            &::before{
-                @include nav_pseuso;
-            }
             &:hover{
                 &::before{
                     content: "Let's talk";
@@ -155,7 +171,7 @@ body{
         height: 600px;
         overflow: hidden;
         // background: var(--cobg-blue);
-        border: 1px solid salmon;
+        // border: 1px solid salmon;
         #mode{
             // border: 1px solid salmon;
             cursor: pointer;
@@ -171,7 +187,20 @@ body{
             }
         }
     }
+    .op{
+        @media (max-width: 850px) {
+            flex-direction: column;
+            height: auto;
+            padding: 10px 10px 70px;
+        }
+        @media (max-width: 395px) {
+            padding: 0px 0px 70px;
+        }
+    }
     .left-home{
+        @media (max-width: 850px) {
+            // border: 1px solid salmon;
+        }
         .pic{
             width: 270px;
             height: 350px;
@@ -205,6 +234,29 @@ body{
         padding: 20px;
         box-shadow: -1.5px -1.5px var(--bg-darkblue);
         transition: .6s;
+        @media (max-width: 850px) {
+            width: 600px;
+            margin-top: 20px;
+            // border: 1px solid salmon;
+        }
+        @media (max-width: 724px) {
+            width: 500px;
+        }
+        @media (max-width: 545px) {
+            width: 450px;
+        }
+        @media (max-width: 545px) {
+            width: 400px;
+        }
+        @media (max-width: 444px) {
+            width: 350px;
+        }
+        @media (max-width: 395px) {
+            width: 350px;
+        }
+        @media (max-width: 375px) {
+            width: 350px;
+        }
         .title{
             text-align: center;
             margin-bottom: 20px;
@@ -215,8 +267,11 @@ body{
             }
             h2{
                 font-weight: 800;
-                color: $white;
+                color: var(--white);
                 font-size: 3rem;
+                @media (max-width: 545px) {
+                    font-size: 2rem;
+                }
             }
             h3{
                 font-weight: 400;
@@ -238,6 +293,8 @@ body{
             border-radius: 15px;
             transition: .6s;
             box-shadow: 10px 10px var(--darkcyan);
+            border-top: 1px solid var(--darkcyan);
+            border-left: 1px solid var(--darkcyan);
             &:hover{   
                 box-shadow: -10px -10px var(--darkcyan);
             }
