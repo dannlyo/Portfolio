@@ -47,10 +47,6 @@ body{
     position: relative;
     max-width: 1310px;
     // border: 1px solid salmon;
-    @media (max-width: 1102px) {
-        // padding: 20px;
-        // width: 1000px;
-    }
     .side-bar{
         position: fixed;
         right: 0;
@@ -360,7 +356,7 @@ body{
             overflow: auto;
             justify-content: space-evenly;
             align-items: center;
-            border: 1px solid salmon;
+            // border: 1px solid salmon;
             height: auto;
             // border-radius: 10px;
             @media (max-width: 1040px) {
@@ -371,7 +367,7 @@ body{
                 flex-direction: column;
                 align-items: center;
                 padding: 20px 15px;
-                border: 1px solid salmon;
+                // border: 1px solid salmon;
                 width: 50%;
                 @media (max-width: 1040px) {
                     width: 95%;
@@ -430,7 +426,7 @@ body{
                     justify-content: space-evenly;
                     row-gap: 40px;
                     grid-template-columns: 70px 70px 70px;
-                    border: 1px solid salmon;
+                    // border: 1px solid salmon;
                     @media (max-width: 450px) {
                         justify-content: space-around;
                         grid-template-columns: 70px 70px;
@@ -500,7 +496,7 @@ body{
             width: 100%;
             display: grid;
             grid-template-columns: calc(100%/2) calc(100%/2);
-            border: 1px solid salmon;
+            // border: 1px solid salmon;
             @media (max-width: 1040px) {
                 margin-top: 30px;
                 justify-content: center;
@@ -517,7 +513,7 @@ body{
                     margin: 20px 0;
                 }
                 .des{
-                    border: 1px solid salmon;
+                    // border: 1px solid salmon;
                     padding: 20px 30px;
                     @media (max-width: 450px) {
                         padding: 20px 10px;
@@ -599,18 +595,68 @@ body{
         }
     }
     .contain-ser{
+        width: 1100px;
+        @media (max-width: 1105px) {
+            width: 950px;
+        }
+        @media (max-width: 955px) {
+            width: 840px;
+        }
+        @media (max-width: 850px) {
+            padding: 0;
+            top: 100px;
+            width: 750px;
+        }
+        @media (max-width: 752px) {
+            top: 30px;
+            width: 650px;
+        }
+        @media (max-width: 650px) {
+            width: 550px;
+        }
+        @media (max-width: 555px) {
+            width: 450px;
+        }
+        @media (max-width: 455px) {
+            width: 400px;
+        }
+        @media (max-width: 400px) {
+            top: 50px;
+            width: 300px;
+        }
         .serv{
             width: 100%;
             height: 100%;
             border-radius: 10px;
             padding: 25px 40px;
             overflow: auto;
-            background: var(--bg-darkblue);
+            // border: 1px solid salmon;
+            // background: var(--bg-darkblue);
+            @media (max-width: 850px) {
+                &::-webkit-scrollbar{
+                    width: 10px;
+                }
+                &::-webkit-scrollbar-track{
+                    background: var(--cobg-blue);
+                }
+                &::-webkit-scrollbar-thumb{
+                    background: var(--bg-darkblue);
+                }
+            }
+            @media (max-width: 555px) {
+                padding: 25px 10px;
+            }
+            @media (max-width: 400px) {
+                padding: 25px 0px;
+            }
             h1{
                 text-align: center;
                 color: var(--darkcyan);
                 font-weight: 300;
                 margin-bottom: 25px;
+                @media (max-width: 752px) {
+                    margin-bottom: 40px;
+                }
             }
             .services{
                 // border: 1px solid salmon;
@@ -618,6 +664,16 @@ body{
                 justify-content: space-between;
                 grid-template-columns: calc(100%/4.2) calc(100%/4.2) calc(100%/4.2) calc(100%/4.2);
                 row-gap: 40px;
+                @media (max-width: 850px) {
+                    grid-template-columns: calc(100%/4.2) calc(100%/4.2) calc(100%/4.2);
+                }
+                @media (max-width: 455px) {
+                    justify-content: space-around;
+                    grid-template-columns: calc(100%/4.2) calc(100%/4.2);
+                }
+                @media (max-width: 400px) {
+                    grid-template-columns: 100%;
+                }
                 .service{
                     // border: 1px solid salmon;
                     display: flex;
