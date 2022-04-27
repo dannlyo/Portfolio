@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/shed.png">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Shed | Home</title>
+    <link rel="shortcut icon" href="../images/shed.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Shed | Let's Talk</title>
 </head>
-<body class="">
+<body>
+
 
 <div class="container">
     <div class="side-bar">
-        <a href="../index.html">
+        <a href="../index.php">
             <div class="icon" id="home">
                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Home</title><path d="M416 174.74V48h-80v58.45L256 32 0 272h64v208h144V320h96v160h144V272h64l-96-97.26z"/></svg>
             </div>
         </a>
-        <a href="./pages/about.html">
+        <a href="./about.php">
             <div class="icon" id="about">
                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>About</title><path d="M288.55 150.84c-8.09-3.86-20-6-32.72-5.82-18 .22-33.13 5.2-45 14.78-23 18.48-24.55 40.37-24.77 42.8a61.69 61.69 0 00-.09 12 3 3 0 003 2.69h21.23a3 3 0 003-3A65.7 65.7 0 01214 204c0-.11 1.14-11.7 14.36-22.34 7-5.64 16.11-8.44 27.83-8.59 9.32-.11 16.93 1.47 20.34 3.09C291 183 298 192.31 298 204.57c0 18-10.9 26.23-30.18 39.18C247.08 257.68 237 275.1 237 297v11a3 3 0 003 3h22a3 3 0 003-3v-11c0-9.16 2.23-19.13 18.44-30 19.95-13.41 42.56-28.6 42.56-62.43 0-23.14-13.3-42.23-37.45-53.73z" fill="none"/><path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64zm10.44 302h-30.21a2.57 2.57 0 01-2.56-2.57v-30.2a2.57 2.57 0 012.56-2.57h30.21a2.57 2.57 0 012.56 2.57v30.2a2.57 2.57 0 01-2.56 2.57zm17-99C267.23 277.88 265 287.85 265 297v11a3 3 0 01-3 3h-22a3 3 0 01-3-3v-11c0-21.91 10.08-39.33 30.82-53.26C287.1 230.8 298 222.6 298 204.57c0-12.26-7-21.57-21.49-28.46-3.41-1.62-11-3.2-20.34-3.09-11.72.15-20.82 2.95-27.83 8.59C215.12 192.25 214 203.84 214 204a65.7 65.7 0 00-.84 10.28 3 3 0 01-3 3h-21.25a3 3 0 01-3-2.69 61.69 61.69 0 01.09-12c.22-2.43 1.8-24.32 24.77-42.8 11.91-9.58 27.06-14.56 45-14.78 12.7-.15 24.63 2 32.72 5.82 24.21 11.51 37.51 30.6 37.51 53.74 0 33.83-22.61 49.02-42.56 62.43z"/></svg>
             </div>
         </a>
-        <a href="./pages/services.html">
+        <a href="./services.php">
             <div class="icon" id="services">
                 <svg width="512pt" height="512pt" version="1.0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(0 512) scale(.1 -.1)">
@@ -36,7 +37,7 @@
                 </svg>
             </div>
         </a>
-        <a href="./pages/portfolio.html">
+        <a href="./portfolio.php">
             <div class="icon" id="portfolio">
                 <svg width="512pt" height="512pt" version="1.0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(0 512) scale(.1 -.1)">
@@ -46,7 +47,7 @@
                 </svg>
             </div>
         </a>
-        <a href="./pages/blog.html">
+        <a href="./blog.php">
             <div class="icon" id="blog">
                 <svg width="512pt" height="512pt" version="1.0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(0 512) scale(.1 -.1)">
@@ -59,7 +60,7 @@
                     </svg>
                 </div>
         </a>
-        <a href="./pages/contact.html">
+        <a href="./contact.php">
             <div class="icon" id="talk">
                 <svg width="512pt" height="512pt" version="1.0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(0 512) scale(.1 -.1)">
@@ -72,34 +73,82 @@
                 </div>
            </a>
     </div>
-        
-    <div class="op">
+    <div class="contain-talk">
         <div id="mode">
-            <img id="swimode" src="./images/sun.png" alt="">
+            <img id="swimode" src="../images/sun.png" alt="">
         </div>
-        <div class="left-home">
-            <div class="pic">
-                <img src="./images/prof.png" alt="">
+        <h1>LET'S TALK</h1>
+        <div class="talk">
+            <div class="talk-left">
+                <form method="">
+                    <input type="text" placeholder="Enter your name">
+                    <input type="email" placeholder="Enter your email">
+                    <textarea name="" placeholder="Type something....." id="" rows="7"></textarea>
+                    <button id="sub">
+                        <div class="send-plane">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.119.882a2.966,2.966,0,0,0-2.8-.8l-16,3.37a4.995,4.995,0,0,0-2.853,8.481L3.184,13.65a1,1,0,0,1,.293.708v3.168a2.965,2.965,0,0,0,.3,1.285l-.008.007.026.026A3,3,0,0,0,5.157,20.2l.026.026.007-.008a2.965,2.965,0,0,0,1.285.3H9.643a1,1,0,0,1,.707.292l1.717,1.717A4.963,4.963,0,0,0,15.587,24a5.049,5.049,0,0,0,1.605-.264,4.933,4.933,0,0,0,3.344-3.986L23.911,3.715A2.975,2.975,0,0,0,23.119.882ZM4.6,12.238,2.881,10.521a2.94,2.94,0,0,1-.722-3.074,2.978,2.978,0,0,1,2.5-2.026L20.5,2.086,5.475,17.113V14.358A2.978,2.978,0,0,0,4.6,12.238Zm13.971,7.17a3,3,0,0,1-5.089,1.712L11.762,19.4a2.978,2.978,0,0,0-2.119-.878H6.888L21.915,3.5Z"/></svg>
+                        </div>
+                    </button>
+                </form>
             </div>
-        </div>
-        <div class="right-home">
-            <div class="title">
-                <h4>Get to know me<h4>
-                <h2>Shed</h2>
-                <h3>Web Developer</h3>
+            <div class="talk-right">
+                <h3><i>MY LOCATION</i></h3>
+                <div class="map">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ict%20innovation%20center&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">map embed code</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+                </div>
+            <div class="social-networks">
+                <a href="http://www.github.com">
+                    <div class="social">
+                        <svg width="1024" height="1024" viewBox="0 0 1024 1024"  xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="http://www.linkedin.com">
+                    <div class="social">
+                        <svg width="100pt" height="100pt" version="1.0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(0 100) scale(.1 -.1)">
+                            <path d="m115 986c-38-17-90-72-104-109-15-39-15-715 0-754 14-38 67-92 106-109 41-18 714-20 760-3 42 15 102 79 113 119 13 46 13 694 0 740-11 40-71 104-113 119-45 17-724 14-762-3zm175-176c27-27 26-77-2-107-27-29-86-31-119-4-32 26-32 86 0 112s95 25 121-1zm472-206c68-35 87-102 88-306v-148h-80-80v155c0 152-1 156-25 180-32 33-60 31-96-4l-29-29v-151-151h-80-80v235 235h80 80v-32-32l29 28c47 45 126 53 193 20zm-452-219v-235h-80-80v228c0 126 3 232 7 235 3 4 39 7 80 7h73v-235z"/>
+                            </g>
+                        </svg>                            
+                    </div>
+                </a>
+                <a href="http://www.instagram.com">
+                    <div class="social">
+                        <svg width="256px" height="256px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M160,128a32,32,0,1,1-32-32A32.03667,32.03667,0,0,1,160,128Zm68-44v88a56.06353,56.06353,0,0,1-56,56H84a56.06353,56.06353,0,0,1-56-56V84A56.06353,56.06353,0,0,1,84,28h88A56.06353,56.06353,0,0,1,228,84Zm-52,44a48,48,0,1,0-48,48A48.05436,48.05436,0,0,0,176,128Zm16-52a12,12,0,1,0-12,12A12,12,0,0,0,192,76Z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="http://www.twitter.com">
+                    <div class="social">
+                        <svg width="100pt" height="100pt" version="1.0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(0 100) scale(.1 -.1)">
+                            <path d="m560 778c-40-28-70-81-70-125 0-29-3-33-25-33-36 0-143 37-180 62-16 12-47 37-68 57-44 42-57 34-57-37 0-47 11-74 43-109 23-26 20-27-17-13-24 9-26 8-26-20 0-33 56-104 93-117 19-6 18-8-13-13l-35-5 35-38c19-21 52-44 72-51l38-12-40-23c-22-12-70-28-107-35l-67-12 55-24c47-22 69-25 169-25 146 0 203 20 294 106 88 82 146 209 146 319 0 16 8 35 18 42 9 7 25 23 36 35l18 22-33-9c-19-6-35-10-37-10s8 15 22 33c15 19 26 36 26 40 0 3-19-2-41-11-40-15-43-15-80 6-52 30-125 30-169 0z"/>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a href="http://www.twitch.com">
+                    <div class="social">
+                        <svg width="100pt" height="100pt" version="1.0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(0 100) scale(.1 -.1)">
+                            <path d="m181 785c-19-51-21-77-21-310v-255h85 85v-45-45h48c44 0 52 4 92 45 44 45 44 45 115 45h70l185 185v218 217h-319-320l-20-55zm599-177v-172l-94-96h-95-95l-86-84v42 42h-65-65v220 220h250 250v-172z"/>
+                            <path d="m440 565v-95h30 30v95 95h-30-30v-95z"/>
+                            <path d="m597 654c-4-4-7-47-7-96v-88h35 36l-3 93c-3 90-3 92-28 95-14 2-29 0-33-4z"/>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
             </div>
-            <div class="description">
-                <p><i>I’m a freelancer . I really like software developing and have a couple years’ experience as a freelancer working with clients.</i></p><br><br>
-                <p><i>I could see myself working on your team because it seems like a great place to work and the benefits look incredible.</i></p>
             </div>
-            <a href="./pages/about.html">More About Me</a>
-        </div>
+        </div>  
     </div>
+
 </div>
 
 
-<script src="./js/main.js"></script>
-
+<script src="../js/main.js"></script>
     
 </body>
 </html>

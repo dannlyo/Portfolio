@@ -29,7 +29,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins;
+    font-family: 'Poppins';
 }
 
 body{
@@ -156,11 +156,12 @@ body{
             }
         }
     }
-    .op,.cont-abt,.contain-ser{
+    .op,.cont-abt,.contain-ser,.login{
         position: relative;
         top: 30px;
         display: flex;
         justify-content: space-around;
+        // border: 1px solid salmon;
         // border-radius: 30px;
         align-items: center;
         padding: 50px;
@@ -1153,4 +1154,51 @@ body{
             }
         }
     }
+    .login{
+        width: 400px;
+        padding: 40px;
+        .log{
+            // border: 1px solid yellowgreen;
+            width: 100%;
+            form{
+                h1{
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: var(--darkcyan);
+                }
+                input{
+                    display: block;
+                    width: 100%;
+                    padding: 7px 7px 10px;
+                    margin: 20px 0;
+                    outline: none;
+                    background: inherit;
+                    color: var(--darkcyan);
+                    border: none;
+                    border-bottom: 1px solid var(--darkcyan);
+                }
+                input[type="submit"]{
+                    border: 1px solid var(--darkcyan);
+                    cursor: pointer;
+                    transition: .6s;
+                    &:hover{
+                        background: var(--darkcyan);
+                        color: var(--bg-darkblue);
+                    }
+                }
+            }
+        }
+    }
 }
+// .response{
+//     position: absolute;
+//     width: 300px;
+//     top: 25px;
+//     left: 25px;
+//     h1{
+//         background: rgba(10, 206, 36, 0.308);
+//         padding: 5px 10px;
+//         font-size: 1.2rem;
+//         color: #fff;
+//     }
+// }

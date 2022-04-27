@@ -26,7 +26,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Poppins;
+  font-family: 'Poppins';
 }
 
 body {
@@ -190,7 +190,7 @@ body {
   width: 130px;
 }
 
-.container .op, .container .cont-abt, .container .contain-ser {
+.container .op, .container .cont-abt, .container .contain-ser, .container .login {
   position: relative;
   top: 30px;
   display: -webkit-box;
@@ -208,7 +208,7 @@ body {
   transition: .6s;
 }
 
-.container .op #mode, .container .cont-abt #mode, .container .contain-ser #mode {
+.container .op #mode, .container .cont-abt #mode, .container .contain-ser #mode, .container .login #mode {
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -218,7 +218,7 @@ body {
   z-index: 10;
 }
 
-.container .op #mode img, .container .cont-abt #mode img, .container .contain-ser #mode img {
+.container .op #mode img, .container .cont-abt #mode img, .container .contain-ser #mode img, .container .login #mode img {
   fill: blue;
   width: 80%;
   height: 80%;
@@ -1718,5 +1718,44 @@ body {
   width: 70%;
   height: 70%;
   opacity: 0.6;
+}
+
+.container .login {
+  width: 400px;
+  padding: 40px;
+}
+
+.container .login .log {
+  width: 100%;
+}
+
+.container .login .log form h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--darkcyan);
+}
+
+.container .login .log form input {
+  display: block;
+  width: 100%;
+  padding: 7px 7px 10px;
+  margin: 20px 0;
+  outline: none;
+  background: inherit;
+  color: var(--darkcyan);
+  border: none;
+  border-bottom: 1px solid var(--darkcyan);
+}
+
+.container .login .log form input[type="submit"] {
+  border: 1px solid var(--darkcyan);
+  cursor: pointer;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.container .login .log form input[type="submit"]:hover {
+  background: var(--darkcyan);
+  color: var(--bg-darkblue);
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,29 +1,28 @@
+<?php include '../php/connection.php'; session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/shed.png">
+    <link rel="shortcut icon" href="./images/shed.png">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Shed | Blog</title>
+    <title>Shed | Home</title>
 </head>
-<body>
-
-
+<body class="">
 <div class="container">
     <div class="side-bar">
-        <a href="../index.html">
+        <a href="../index.php">
             <div class="icon" id="home">
                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Home</title><path d="M416 174.74V48h-80v58.45L256 32 0 272h64v208h144V320h96v160h144V272h64l-96-97.26z"/></svg>
             </div>
         </a>
-        <a href="./about.html">
+        <a href="./pages/about.php">
             <div class="icon" id="about">
                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>About</title><path d="M288.55 150.84c-8.09-3.86-20-6-32.72-5.82-18 .22-33.13 5.2-45 14.78-23 18.48-24.55 40.37-24.77 42.8a61.69 61.69 0 00-.09 12 3 3 0 003 2.69h21.23a3 3 0 003-3A65.7 65.7 0 01214 204c0-.11 1.14-11.7 14.36-22.34 7-5.64 16.11-8.44 27.83-8.59 9.32-.11 16.93 1.47 20.34 3.09C291 183 298 192.31 298 204.57c0 18-10.9 26.23-30.18 39.18C247.08 257.68 237 275.1 237 297v11a3 3 0 003 3h22a3 3 0 003-3v-11c0-9.16 2.23-19.13 18.44-30 19.95-13.41 42.56-28.6 42.56-62.43 0-23.14-13.3-42.23-37.45-53.73z" fill="none"/><path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64zm10.44 302h-30.21a2.57 2.57 0 01-2.56-2.57v-30.2a2.57 2.57 0 012.56-2.57h30.21a2.57 2.57 0 012.56 2.57v30.2a2.57 2.57 0 01-2.56 2.57zm17-99C267.23 277.88 265 287.85 265 297v11a3 3 0 01-3 3h-22a3 3 0 01-3-3v-11c0-21.91 10.08-39.33 30.82-53.26C287.1 230.8 298 222.6 298 204.57c0-12.26-7-21.57-21.49-28.46-3.41-1.62-11-3.2-20.34-3.09-11.72.15-20.82 2.95-27.83 8.59C215.12 192.25 214 203.84 214 204a65.7 65.7 0 00-.84 10.28 3 3 0 01-3 3h-21.25a3 3 0 01-3-2.69 61.69 61.69 0 01.09-12c.22-2.43 1.8-24.32 24.77-42.8 11.91-9.58 27.06-14.56 45-14.78 12.7-.15 24.63 2 32.72 5.82 24.21 11.51 37.51 30.6 37.51 53.74 0 33.83-22.61 49.02-42.56 62.43z"/></svg>
             </div>
         </a>
-        <a href="./services.html">
+        <a href="./pages/services.php">
             <div class="icon" id="services">
                 <svg width="512pt" height="512pt" version="1.0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(0 512) scale(.1 -.1)">
@@ -37,7 +36,7 @@
                 </svg>
             </div>
         </a>
-        <a href="./portfolio.html">
+        <a href="./pages/portfolio.php">
             <div class="icon" id="portfolio">
                 <svg width="512pt" height="512pt" version="1.0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(0 512) scale(.1 -.1)">
@@ -47,7 +46,7 @@
                 </svg>
             </div>
         </a>
-        <a href="./blog.html">
+        <a href="./pages/blog.php">
             <div class="icon" id="blog">
                 <svg width="512pt" height="512pt" version="1.0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(0 512) scale(.1 -.1)">
@@ -60,7 +59,7 @@
                     </svg>
                 </div>
         </a>
-        <a href="./contact.html">
+        <a href="./pages/contact.php">
             <div class="icon" id="talk">
                 <svg width="512pt" height="512pt" version="1.0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(0 512) scale(.1 -.1)">
@@ -73,72 +72,53 @@
                 </div>
            </a>
     </div>
-    <div class="contain-blog">
+        
+    <div class="op login">
         <div id="mode">
             <img id="swimode" src="../images/sun.png" alt="">
         </div>
-            <h1>BLOG</h1>
-        <div class="blogs">
-            <div class="blog">
-                <div class="blog-img">
-                    <img src="../images/image_processing20210616-13988-14wnzhl.jpg" alt="" srcset="">
-                </div>
-                <div class="article">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, numquam.</p>
-                </div>
-                <h4>Friday 9:37 PM</h4>
-            </div>
-            <div class="blog">
-                <div class="blog-img">
-                    <img src="../images/8b707bf8210facfaff2058e0dfa1f0be.png" alt="" srcset="">
-                </div>
-                <div class="article">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, numquam.</p>
-                </div>
-                <h4>Friday 9:37 PM</h4>
-            </div>
-            <div class="blog">
-                <div class="blog-img">
-                    <img src="../images/image_processing20210405-7308-1g5rjm3.png" alt="" srcset="">
-                </div>
-                <div class="article">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, numquam.</p>
-                </div>
-                <h4>Friday 9:37 PM</h4>
-            </div>
-            <div class="blog">
-                <div class="blog-img">
-                    <img src="../images/lock-icon-whilst-man-is-using-mouse_53876-90303.webp" alt="" srcset="">
-                </div>
-                <div class="article">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, numquam.</p>
-                </div>
-                <h4>Friday 9:37 PM</h4>
-            </div>
-            <div class="blog">
-                <div class="blog-img">
-                    <img src="../images/image_processing20220125-26054-1rrhpp0.png" alt="" srcset="">
-                </div>
-                <div class="article">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, numquam.</p>
-                </div>
-                <h4>Friday 9:37 PM</h4>
-            </div>
-            <div class="blog">
-                <div class="blog-img">
-                    <img src="../images/image_processing20210604-3104-hwpo95.png" alt="" srcset="">
-                </div>
-                <div class="article">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, numquam.</p>
-                </div>
-                <h4>Friday 9:37 PM</h4>
-            </div>
-        </div>
+        <div class="log">
+            <form action="" method="post">
+                <h1>Log in</h1>
+                <input type="text" name="username" placeholder="Enter username">
+                <input type="password" name="password" placeholder="Enter password">
+                <input type="submit" name="log" value="LOG IN">
+            </form>
+        </div> 
     </div>
-
 </div>
 
+
+<?php
+
+if(isset($_POST['log'])){
+    $user = $_POST['username'];
+    $password = $_POST['password'];
+
+    $select = $server->prepare("SELECT * FROM `admin` WHERE admin_username = '$user' AND `password` = '$password'");
+    $select ->execute();
+    $count =  $select->rowcount();
+
+    if($count > 0){
+        $row = $select->fetch();
+        $_SESSION['username'] = $row['admin_username'];
+        $_SESSION['password'] = $row['password'];
+        $_SESSION['email'] = $row['admin_email'];
+        $_SESSION['phone'] = $row['admin_phone'];
+        $_SESSION['logged'] = true;
+        echo "<p style='color: #fff;'>Logged in</p>";
+        echo '<meta http-equiv="refresh" content="1; url=../dashboard/dashboard.php">';
+
+    }
+    else{
+        echo "no one";
+    }
+}
+
+?>
+
 <script src="../js/main.js"></script>
+
     
 </body>
 </html>
